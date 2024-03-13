@@ -1,0 +1,138 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  min-height: 100vh;
+  font-family: sans-serif;
+  background-color: hsl(0, 100%, 74%);
+  background-image: url(../images/bg-intro-desktop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container{
+  margin: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.texts , .forms{
+  width: 450px;
+  padding: 10px;
+  margin: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.texts h1{
+  color: white;
+  font-size: 48px;
+}
+
+.texts p{
+  color: white;
+  font-size: 16px;
+}
+
+.alert{
+  color: hsl(246, 25%, 77%);
+  text-align: center;
+  width: 100%;
+  padding: 15px;
+  background-color: hsl(248, 32%, 49%);
+  border-radius: 8px;
+  box-shadow: 0px 8px 0px hsla(248, 32%, 49%, 0.354);
+  margin-bottom: 20px;
+}
+
+.alert b{
+  color: white;
+}
+
+.form{
+  width: 100%;
+  background-color: white;
+  padding: 15px 25px;
+  box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+}
+
+.form input{
+  display: block;
+  width: 100%;
+  font-size: 12px;
+  margin: 15px 0;
+  padding: 8px 20px;
+  border-radius: 3px;
+  outline: 1px solid hsl(249, 10%, 26%);
+  border: 1px solid hsl(246, 25%, 77%);
+  color: hsl(248, 32%, 49%);
+  font-weight: 600;
+}
+
+.form a{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 10px;
+  display: block;
+  width: 100%;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 0px 4px 0px hsl(154, 98%, 24%);
+  background-color: hsl(154, 59%, 51%);
+  margin-bottom: 10px;
+}
+
+.form p{
+  text-align: center;
+  color: hsl(246, 25%, 77%);
+  font-size: 10px;
+  margin: 20px 0;
+}
+
+.form b{
+  color: hsl(0, 100%, 74%);
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 975px){
+  .container{
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+
+  .texts{
+    width: 100%;
+    margin: 10px;
+  }
+
+  .texts h1{
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .texts p{
+    text-align: center;
+  }
+
+  .forms{
+    text-align: center;
+    width: 100%;
+  }
+} 
+
